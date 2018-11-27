@@ -1,7 +1,10 @@
 "use strict";
-var Interface = {
-    name: "string",
-    age: 42,
+var InterfaceInstance = {
+    name: "thomas",
+    age: 27,
+    whoAmI: function () {
+        console.log("Hello, my name is " + name + ". I am " + age + " years old.");
+    }
 };
-Interface.name = "thomas";
-Interface.age = 42;
+// Call our whoAmI method to console.log who we are!
+InterfaceInstance.whoAmI();
